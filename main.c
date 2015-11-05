@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <time.h>
 #include IMPL
 
 int main()
 {
-	
-	return 0;
+    compute_pi(0x8000000);
+    return 0;
 }

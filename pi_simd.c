@@ -4,7 +4,7 @@ double compute_pi(size_t dt)
 {
     double pi = 0.0;
     double delta = 1.0 / dt;
-    register __m256d ymm0, ymm1, ymm2, ymm3, ymm4;                                                                          
+    register __m256d ymm0, ymm1, ymm2, ymm3, ymm4;
     ymm0 = _mm256_set1_pd(1.0);
     ymm1 = _mm256_set1_pd(delta);
     ymm2 = _mm256_set_pd(delta * 3, delta * 2, delta * 1, 0.0);

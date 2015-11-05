@@ -1,5 +1,5 @@
 CC ?= gcc
-CFLAGS_common ?= -O0 -Wall -std=gnu99
+CFLAGS_common ?= -O0 -std=gnu99 -mavx -mfma -Wall -Werror
 
 EXEC = pi_orig pi_simd
 all: $(EXEC)
